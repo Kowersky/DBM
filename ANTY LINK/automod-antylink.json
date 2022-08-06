@@ -1,0 +1,129 @@
+{
+  "name": "automod-antylink",
+  "permissions": "ADMINISTRATOR",
+  "permissions2": "NONE",
+  "restriction": "1",
+  "_id": "GUNun",
+  "actions": [
+    {
+      "storage": "4",
+      "varName": "wybierz-opcje",
+      "comparison": "1",
+      "value": "'1'",
+      "branch": {
+        "iftrue": "0",
+        "iffalse": "2",
+        "iffalseVal": "5"
+      },
+      "name": "Check Variable"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "antylink",
+      "changeType": "0",
+      "value": "slashParams(\"wybierz-opcje\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "AUTOMOD-ANTYLINK",
+          "url": "",
+          "color": "#00ff00",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Anty link zostął włączony!",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    },
+    {
+      "name": "End Action Sequence"
+    },
+    {
+      "server": "0",
+      "varName": "",
+      "dataName": "antylink",
+      "changeType": "0",
+      "value": "slashParams(\"wybierz-opcje\")",
+      "name": "Control Server Data"
+    },
+    {
+      "channel": "0",
+      "varName": "",
+      "message": "",
+      "buttons": [],
+      "selectMenus": [],
+      "attachments": [],
+      "embeds": [
+        {
+          "title": "AUTOMOD-ANTYLINK",
+          "url": "",
+          "color": "#00ff00",
+          "timestamp": "false",
+          "imageUrl": "",
+          "thumbUrl": "",
+          "description": "Anty link zostął włączony!",
+          "fields": [],
+          "author": "",
+          "authorUrl": "",
+          "authorIcon": "",
+          "footerText": "",
+          "footerIconUrl": ""
+        }
+      ],
+      "reply": true,
+      "ephemeral": true,
+      "tts": false,
+      "overwrite": false,
+      "dontSend": false,
+      "editMessage": "0",
+      "editMessageVarName": "",
+      "storage": "0",
+      "varName2": "",
+      "name": "Send Message"
+    }
+  ],
+  "comType": "4",
+  "parameters": [
+    {
+      "name": "wybierz-opcje",
+      "description": "Czy anty link ma być on/off?",
+      "type": "STRING",
+      "required": true,
+      "choices": [
+        {
+          "name": "on",
+          "value": "1"
+        },
+        {
+          "name": "off",
+          "value": "0"
+        }
+      ]
+    }
+  ]
+}
